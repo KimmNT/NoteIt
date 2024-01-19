@@ -1,22 +1,22 @@
 // styles.js
-import {StyleSheet, Dimensions} from 'react-native';
-import colors from '../global/colors';
+import { StyleSheet, Dimensions } from "react-native";
+import colors from "../global/colors";
 
-const res = Dimensions.get('window').height;
+const res = Dimensions.get("window").height;
 
 const styles = StyleSheet.create({
   home__list_item: {
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    width: '100%',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    width: "100%",
+    flexWrap: "wrap",
     paddingVertical: res * 0.02,
-    gap: res * 0.02,
+    gap: res * 0.04,
   },
   home__item: {
-    width: '48%',
+    width: "45%",
     // height: res * 0.23,
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
   },
   home__item_true: {
     backgroundColor: colors.primary,
@@ -35,45 +35,45 @@ const styles = StyleSheet.create({
   },
   home__item_title: {
     color: colors.text,
-    fontWeight: '600',
+    fontWeight: "600",
     fontSize: res * 0.03,
-    width: '100%',
+    width: "100%",
     height: res * 0.18,
   },
   home__item_status_container: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
   home__item_date: {
-    textTransform: 'uppercase',
-    textAlign: 'right',
+    textTransform: "uppercase",
+    textAlign: "right",
     fontSize: res * 0.02,
-    fontWeight: '600',
+    fontWeight: "600",
     marginTop: res * 0.02,
   },
   home__item_type: {
-    textTransform: 'uppercase',
-    textAlign: 'right',
+    textTransform: "uppercase",
+    textAlign: "right",
     fontSize: res * 0.015,
-    fontWeight: '600',
+    fontWeight: "600",
     marginTop: res * 0.02,
     backgroundColor: colors.text,
-    textAlign: 'center',
+    textAlign: "center",
     paddingVertical: res * 0.005,
     paddingHorizontal: res * 0.01,
     color: colors.light,
   },
   home__add_item: {
-    position: 'absolute',
-    bottom: res * 0.01,
-    right: res * 0.01,
+    position: "absolute",
+    bottom: res * 0.03,
+    right: res * 0.03,
     zIndex: 1,
   },
   home__add_item_box: {
-    width: res * 0.1,
-    height: res * 0.1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: res * 0.08,
+    height: res * 0.08,
+    alignItems: "center",
+    justifyContent: "center",
     backgroundColor: colors.text,
     borderRadius: res * 0.015,
   },
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
 
   home__item_title_done: {
     // Apply styles for the title when status is true
-    textDecorationLine: 'line-through', // Add strikethrough or other styles
+    textDecorationLine: "line-through", // Add strikethrough or other styles
   },
 });
 
